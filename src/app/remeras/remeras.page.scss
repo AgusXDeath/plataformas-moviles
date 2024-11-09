@@ -1,0 +1,14 @@
+.navbar-image {
+    width: 160px; /* Ajusta el tamaño de la imagen */
+    height: 45px; /* Mantiene la proporción de la imagen */
+    margin: -22px; /* Centra la imagen */
+    display: block; /* Asegura que la imagen sea un bloque */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centrado exacto */
+  }
+  .texto {
+    background-color:#D9D9D9;
+    color: black;
+    text-align: center;
+}

@@ -9,7 +9,10 @@ export class HomePage implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
+  doSomething() {
+    console.log('Search button clicked');
+    // Aquí puedes agregar la lógica para el botón de búsqueda
+  }
 }

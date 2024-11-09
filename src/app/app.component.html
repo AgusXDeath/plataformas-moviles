@@ -1,5 +1,6 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
+    <!-- Menú lateral -->
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
@@ -12,10 +13,13 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
-
-  
       </ion-content>
     </ion-menu>
+
+
+
+    <!-- Contenido principal de la aplicación -->
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>
 </ion-app>
+
