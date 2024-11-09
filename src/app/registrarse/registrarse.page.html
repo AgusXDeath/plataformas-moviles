@@ -1,13 +1,57 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>registrarse</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">registrarse</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+<ion-content [fullscreen]="true" class="register-container">
+    <!-- Navbar que estará presente en todas las páginas -->
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+         
+            <!-- Imagen en el centro del navbar -->
+    <ion-title>
+      <img src="assets/logo recortado.jpg" alt="Logo" class="navbar-image"/>
+    </ion-title>
+  
+         
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon slot="icon-only" name="search"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon slot="icon-only" name="cart"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+  <div class="register-box">
+    <h2>Sign in</h2>
+    <form (ngSubmit)="register()">
+      <ion-item>
+        <ion-label position="floating" class="text1">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="fullName" name="fullName" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating" class="text1">Address</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating" class="text1">password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating" class="text1">confirm password</ion-label>
+        <ion-input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" required></ion-input>
+      </ion-item>
+      
+      <ion-button expand="block" type="submit" class="text">Registrar</ion-button>
+      
+      <p class="login-link">
+        ¿Ya tienes cuenta? <a href="iniciar">Inicia sesión aquí</a>
+      </p>
+    </form>
+  </div>
 </ion-content>
