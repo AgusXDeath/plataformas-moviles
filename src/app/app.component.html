@@ -5,7 +5,6 @@
       <ion-content>
         <ion-list id="inbox-list">
           <ion-list-header>Menú</ion-list-header>
-
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
@@ -16,10 +15,24 @@
       </ion-content>
     </ion-menu>
 
-
-
     <!-- Contenido principal de la aplicación -->
-    <ion-router-outlet id="main-content"></ion-router-outlet>
+    <ion-content id="main-content">
+      <app-navbar></app-navbar>
+      <ion-router-outlet></ion-router-outlet>
+      <ion-footer>
+        <ion-toolbar color="primary">
+          <div class="footer-content">
+            <ion-title class="ion-text-center">
+              <div class="footer-text">
+                <img src="../assets/logo.jpg" alt="Logo" class="footer-image">  <br>
+                ©BA indumentaria <br>
+                industria Argentina
+              </div>
+            </ion-title>
+          </div>
+        </ion-toolbar>
+      </ion-footer>      
+    </ion-content>
+    
   </ion-split-pane>
 </ion-app>
-

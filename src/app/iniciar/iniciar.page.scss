@@ -1,72 +1,67 @@
-
-.navbar-image {
-    width: 160px; /* Ajusta el tamaño de la imagen */
-    height: 45px; /* Mantiene la proporción de la imagen */
-    margin: -22px; /* Centra la imagen */
-    display: block; /* Asegura que la imagen sea un bloque */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Centrado exacto */
-  }
 ion-content {
-    --background: url('../../assets/fondo.jpeg') no-repeat center center / cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-  }
-  
-  .login-box {
-    width: 90%;
-    max-width: 400px;
-    padding: 2rem;
-    border-radius: 8px;
-    background: rgba(105, 105, 105, 0.8);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 1rem;
-    color: #000000;
-  }
-  
-  ion-item {
-    --border-radius: 8px;
-    --background: #d8d8d8;
-    margin-bottom: 1rem;
-  }
-  
-  ion-label {
-    color: #1909fc;
-  }
-  
-  ion-button {
-    --background: #000000;
-    margin-top: 1rem;
-  }
-  
-  .register-link {
-    margin-top: 1.5rem;
-    font-size: 0.9rem;
-    color: #ccc;
-  }
-  
-  .register-link a {
-    color: #3880ff;
-    text-decoration: none;
-  }
-  .text {
-    color:#ffffff
-  }
-  .text1 {
-    color:#020202
-  }
+  --background: url('../../assets/fondo.jpeg') no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;  
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;  
+  height: 100%;  
+}
+
+.login-box {
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+ion-item {
+  --border-radius: 8px;
+  --background: #d8d8d8;
+  margin-bottom: 1rem;
+}
+
+ion-label {
+  color: #1909fc;
+}
+
+ion-button {
+  --background: #000000;
+  margin-top: 1rem;
+}
+
+.register-link {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.register-link a {
+  color: #3880ff;
+  text-decoration: none;
+}
+
+.text {
+  color: #ffffff;
+}
+
+.text1 {
+  color: #020202;
+}

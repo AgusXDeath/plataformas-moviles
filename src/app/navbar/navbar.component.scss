@@ -1,14 +1,21 @@
-.navbar-image {
+.navbar {
+    position: relative; 
+  }
+  
+  .navbar-image {
     width: 160px; 
     height: 45px; 
-    margin: -22px; 
     display: block; 
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
   }
   .texto {
     background-color: #D9D9D9;
     color: black;
     text-align: center;
+}
+ion-icon {
+  color: black;
 }

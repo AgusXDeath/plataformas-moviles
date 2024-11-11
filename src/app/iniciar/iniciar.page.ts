@@ -15,9 +15,9 @@ export class IniciarPage implements OnInit {
   ngOnInit() {}
 
   login() {
-    // Aquí puedes agregar la lógica de autenticación
+    
     if (this.email && this.password) {
-      // Redirige al usuario a la página principal después de autenticarse
+     
       this.router.navigate(['/home']);
     } else {
       alert('Por favor ingresa un correo y una contraseña válidos');

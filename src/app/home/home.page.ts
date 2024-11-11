@@ -13,6 +13,6 @@ export class HomePage implements OnInit {
 
   doSomething() {
     console.log('Search button clicked');
-    // Aquí puedes agregar la lógica para el botón de búsqueda
+
   }
 }
