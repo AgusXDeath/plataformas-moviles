@@ -3,28 +3,25 @@ ion-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 0;  
+  height: 100vh;
+  width: 100vw; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
+  margin: 0; /* Asegura que no haya márgenes */
+  padding: 0; /* Asegura que no haya padding */
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+
 }
 
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;  
-  height: 100%;  
-}
 
 .login-box {
-  width: 90%;
-  max-width: 400px;
+  width: 70%;
+  max-width: 70%;
   padding: 2rem;
   border-radius: 8px;
   background: rgba(105, 105, 105, 0.8);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
+  margin: auto;
 }
 
 h2 {
